@@ -2,7 +2,9 @@ import React, { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
-const FireParticles = (props) => {
+type FireParticlesProps = React.ComponentProps<typeof Particles>;
+
+const FireParticles: React.FC<FireParticlesProps> = (props) => {
   const [particleCount, setParticleCount] = useState(150);
   const [init, setInit] = useState(false);
 
