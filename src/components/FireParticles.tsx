@@ -17,7 +17,7 @@ const FireParticles: React.FC<FireParticlesProps> = (props) => {
     });
   }, []);
 
-  const particlesLoaded = (container) => {
+  const particlesLoaded = (container: any) => {
     console.log(container);
   };
 
@@ -66,7 +66,7 @@ const FireParticles: React.FC<FireParticlesProps> = (props) => {
           value: ["#fdcf58", "#757676", "#f27d0c", "#800909", "#f07f13"],
         },
         move: {
-          direction: "up",
+          direction: "top",
           enable: true,
           outModes: {
             default: "bounce",
