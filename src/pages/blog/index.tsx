@@ -1,6 +1,5 @@
 import React from "react";
 import FireParticles from "@/components/FireParticles";
-import ShinyButton from "@/components/ShinyButton";
 import BlogCard from "@/components/BlogCard";
 import { blogPosts } from "@/data/blogPosts";
 

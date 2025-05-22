@@ -11,6 +11,7 @@ const FireParticles = (props) => {
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
+      console.log(init);
     });
   }, []);
 

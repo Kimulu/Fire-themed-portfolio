@@ -1,12 +1,9 @@
 import React, { useState } from "react";
 import FireParticles from "./FireParticles";
 import ShinyButton from "./ShinyButton";
-import { useRouter } from "next/router";
 import Link from "next/link";
 
 const ContactForm = () => {
-  const router = useRouter();
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",

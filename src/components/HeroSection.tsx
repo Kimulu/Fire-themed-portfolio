@@ -31,7 +31,7 @@ const HeroSection = () => {
             Welcome to My <br /> Portfolio 🔥
           </h1>
           <p className="text-lg md:text-2xl max-w-2xl mb-8 drop-shadow-md">
-            Let's turn ideas into blazing realities.
+            Lets turn ideas into blazing realities.
           </p>
           <ShinyButton label="Explore my Work" onClick={handleScroll} />
         </div>

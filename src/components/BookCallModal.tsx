@@ -61,7 +61,7 @@ const BookCallModal: React.FC<BookCallModalProps> = ({
         alert("Failed to book the call. Try again.");
       }
     } catch (err) {
-      alert("Something went wrong.");
+      alert({ err });
     } finally {
       setSubmitting(false);
     }
