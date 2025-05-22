@@ -68,9 +68,6 @@ const FireParticles: React.FC<FireParticlesProps> = (props) => {
         },
         move: {
           enable: true,
-          outModes: {
-            default: "bounce",
-          },
           random: false,
           speed: 6,
           straight: false,
