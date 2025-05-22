@@ -67,7 +67,6 @@ const FireParticles: React.FC<FireParticlesProps> = (props) => {
           value: ["#fdcf58", "#757676", "#f27d0c", "#800909", "#f07f13"],
         },
         move: {
-          direction: "top",
           enable: true,
           outModes: {
             default: "bounce",
