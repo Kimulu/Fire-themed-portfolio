@@ -1,6 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import type { Container } from "@tsparticles/engine";
 
 type FireParticlesProps = React.ComponentProps<typeof Particles>;
 
@@ -17,7 +18,7 @@ const FireParticles: React.FC<FireParticlesProps> = (props) => {
     });
   }, []);
 
-  const particlesLoaded = (container: any) => {
+  const particlesLoaded = (container: Container) => {
     console.log(container);
   };
 
