@@ -17,25 +17,15 @@ const projects: Project[] = [
     name: "Portfolio Website",
     description: "My personal portfolio to showcase my projects and skills.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    githubLink: "https://github.com/your-username/portfolio",
-    liveDemo: "https://your-portfolio-link.com",
-    imageSrc: "/images/portfolio.png",
+    githubLink: "https://github.com/Kimulu/Fire-themed-portfolio",
+    imageSrc: "/images/portfolio.JPG",
   },
   {
-    name: "E-commerce Store",
-    description:
-      "A modern e-commerce platform with full checkout capabilities.",
-    techStack: ["React", "Redux", "Firebase", "Tailwind CSS"],
-    githubLink: "https://github.com/your-username/e-commerce",
-    liveDemo: "https://your-ecommerce-link.com",
-    imageSrc: "/images/ecommerce.png",
-  },
-  {
-    name: "Task Manager App",
-    description: "Manage your daily tasks efficiently with this React app.",
-    techStack: ["React", "TypeScript", "TanStack Query"],
-    githubLink: "https://github.com/your-username/task-manager",
-    imageSrc: "/images/taskmanager.png",
+    name: "Time Management Web App - Coming soon",
+    description: "A modern Time Management tool",
+    techStack: ["React", "Redux", "MongoDB", "Tailwind CSS"],
+    imageSrc: "/images/clock.png",
+    githubLink: "",
   },
 ];
 
@@ -60,7 +50,7 @@ const ProjectsSection: React.FC = () => {
               alt={project.name}
               width={500}
               height={300}
-              className="w-full h-40 object-cover rounded-lg mb-4"
+              className="w-full h-70 object-cover rounded-lg mb-4"
             />
 
             <h3 className="text-xl font-semibold text-white mb-2">
