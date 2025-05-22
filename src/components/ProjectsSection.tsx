@@ -18,7 +18,7 @@ const projects: Project[] = [
     description: "My personal portfolio to showcase my projects and skills.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubLink: "https://github.com/Kimulu/Fire-themed-portfolio",
-    imageSrc: "/images/portfolio.jpg",
+    imageSrc: "/images/Portfolio.jpg",
   },
   {
     name: "Time Management Web App - Coming soon",
