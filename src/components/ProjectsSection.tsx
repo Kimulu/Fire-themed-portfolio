@@ -10,22 +10,39 @@ type Project = {
   githubLink: string;
   liveDemo?: string;
   imageSrc: string;
+  isProduction?: boolean; // NEW: Field to indicate if project is in production
 };
 
 const projects: Project[] = [
   {
     name: "Portfolio Website",
-    description: "My personal portfolio to showcase my projects and skills.",
+    description:
+      "My personal portfolio to showcase my projects and skills. Designed for a sleek and modern user experience.",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubLink: "https://github.com/Kimulu/Fire-themed-portfolio",
+    liveDemo:
+      "https://fire-themed-portfolio-git-main-michael-kimulus-projects.vercel.app/", // Assuming this is your live portfolio URL
     imageSrc: "/images/Portfolio.jpg",
+    isProduction: true, // Your portfolio itself is live!
   },
   {
-    name: "Time Management Web App - Coming soon",
-    description: "A modern Time Management tool",
-    techStack: ["React", "Redux", "MongoDB", "Tailwind CSS"],
-    imageSrc: "/images/clock.png",
-    githubLink: "",
+    name: "Pomoflow - Time Management Web App", // Updated name
+    description:
+      "A comprehensive time management and productivity tool leveraging the Pomodoro Technique. Features include robust task management, advanced reporting, project organization, and secure payment integration for premium plans.", // Detailed description
+    techStack: [
+      "Next.js",
+      "Context API",
+      "Tailwind CSS",
+      "MongoDB",
+      "Express.js",
+      "TypeScript",
+      "Paystack",
+      "M-Pesa",
+    ], // Full tech stack
+    githubLink: "", // As requested, no GitHub link
+    liveDemo: "https://www.pomoflow.app", // Live URL for Pomoflow
+    imageSrc: "/images/pomoflow-screenshot.png", // Placeholder for a screenshot you'll add
+    isProduction: true, // Mark as production
   },
 ];
 
@@ -44,13 +61,21 @@ const ProjectsSection: React.FC = () => {
             key={index}
             className="bg-gray-800 p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105 hover:ring-2 hover:ring-yellow-500 relative overflow-hidden"
           >
+            {/* NEW: Production Badge */}
+            {project.isProduction && (
+              <span className="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10 flex items-center gap-1">
+                Live <span className="text-sm">🚀</span>
+              </span>
+            )}
+
             {/* Image Preview */}
             <Image
               src={project.imageSrc}
               alt={project.name}
               width={500}
               height={300}
-              className="w-full h-70 object-cover rounded-lg mb-4"
+              className="w-full h-auto object-cover rounded-lg mb-4 aspect-video" // Use aspect-video for consistent image ratio
+              layout="responsive" // Ensure image is responsive
             />
 
             <h3 className="text-xl font-semibold text-white mb-2">
@@ -73,20 +98,25 @@ const ProjectsSection: React.FC = () => {
             </div>
 
             <div className="flex gap-4 mt-2">
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition pt-2"
-              >
-                <FaGithub size={20} />
-              </a>
+              {project.githubLink && ( // Only show GitHub link if it exists
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${project.name} on GitHub`}
+                  className="text-gray-400 hover:text-white transition pt-2"
+                >
+                  <FaGithub size={24} />{" "}
+                  {/* Increased icon size for better visibility */}
+                </a>
+              )}
 
               {project.liveDemo && (
                 <a
                   href={project.liveDemo}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`View live demo of ${project.name}`}
                 >
                   <ShinyButton label="View Project" />
                 </a>
