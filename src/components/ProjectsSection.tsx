@@ -23,7 +23,7 @@ const projects: Project[] = [
     liveDemo:
       "https://fire-themed-portfolio-git-main-michael-kimulus-projects.vercel.app/", // Assuming this is your live portfolio URL
     imageSrc: "/images/Portfolio.jpg",
-    isProduction: true, // Your portfolio itself is live!
+    isProduction: false, // Your portfolio itself is live!
   },
   {
     name: "Pomoflow - Time Management Web App", // Updated name
@@ -63,8 +63,8 @@ const ProjectsSection: React.FC = () => {
           >
             {/* NEW: Production Badge */}
             {project.isProduction && (
-              <span className="absolute top-3 right-3 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10 flex items-center gap-1">
-                Live <span className="text-sm">🚀</span>
+              <span className="absolute top-3 right-3 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10 flex items-center gap-1">
+                Production <span className="text-sm">🚀</span>
               </span>
             )}
 
