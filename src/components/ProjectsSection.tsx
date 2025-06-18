@@ -41,7 +41,7 @@ const projects: Project[] = [
     ], // Full tech stack
     githubLink: "", // As requested, no GitHub link
     liveDemo: "https://www.pomoflow.app", // Live URL for Pomoflow
-    imageSrc: "/images/pomoflow-screenshot.png", // Placeholder for a screenshot you'll add
+    imageSrc: "/images/pomoflow.png", // Placeholder for a screenshot you'll add
     isProduction: true,
   },
 ];
