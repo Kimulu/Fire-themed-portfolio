@@ -37,7 +37,7 @@ const projects: Project[] = [
       "TypeScript",
       "Firebase",
     ],
-    githubLink: "",
+    githubLink: "https://github.com/Kimulu/alx-project-nexus",
     liveDemo: "https://alx-project-nexus-michael-kimulus-projects.vercel.app/", // Placeholder: Update with your live URL
     imageSrc: "/images/job_board.png", // Placeholder: Update with your screenshot
     isProduction: false,
