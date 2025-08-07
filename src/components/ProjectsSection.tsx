@@ -21,14 +21,31 @@ const projects: Project[] = [
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     githubLink: "https://github.com/Kimulu/Fire-themed-portfolio",
     liveDemo:
-      "https://fire-themed-portfolio-git-main-michael-kimulus-projects.vercel.app/", // Assuming this is your live portfolio URL
+      "https://fire-themed-portfolio-git-main-michael-kimulus-projects.vercel.app/",
     imageSrc: "/images/Portfolio.jpg",
-    isProduction: false, // Your portfolio itself is live!
+    isProduction: false,
   },
   {
-    name: "Pomoflow - Time Management Web App", // Updated name
+    name: "ALX Capstone Project - Job Board Platform",
     description:
-      "A comprehensive time management and productivity tool leveraging the Pomodoro Technique. Features include robust task management, advanced reporting, project organization, and secure payment integration for premium plans.", // Detailed description
+      "An interactive job board platform for exploring and filtering job postings. Built as a capstone project, it features dynamic API integration, advanced filtering, and a fully responsive design. We overcame challenges with third-party APIs and implemented Firebase for a robust backend.",
+    techStack: [
+      "Next.js",
+      "Context API",
+      "Tailwind CSS",
+      "Framer Motion",
+      "TypeScript",
+      "Firebase",
+    ],
+    githubLink: "",
+    liveDemo: "https://alx-project-nexus-michael-kimulus-projects.vercel.app/", // Placeholder: Update with your live URL
+    imageSrc: "/images/job_board.png", // Placeholder: Update with your screenshot
+    isProduction: false,
+  },
+  {
+    name: "Pomoflow - Time Management Web App",
+    description:
+      "A comprehensive time management and productivity tool leveraging the Pomodoro Technique. Features include robust task management, advanced reporting, project organization, and secure payment integration for premium plans.",
     techStack: [
       "Next.js",
       "Context API",
@@ -38,10 +55,10 @@ const projects: Project[] = [
       "TypeScript",
       "Paystack",
       "M-Pesa",
-    ], // Full tech stack
-    githubLink: "", // As requested, no GitHub link
-    liveDemo: "https://www.pomoflow.app", // Live URL for Pomoflow
-    imageSrc: "/images/pomoflow.png", // Placeholder for a screenshot you'll add
+    ],
+    githubLink: "",
+    liveDemo: "https://www.pomoflow.app",
+    imageSrc: "/images/pomoflow.png",
     isProduction: true,
   },
 ];
