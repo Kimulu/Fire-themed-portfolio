@@ -7,10 +7,11 @@ type Project = {
   name: string;
   description: string;
   techStack: string[];
-  githubLink: string;
-  liveDemo?: string;
+  githubLink?: string; // Made optional
+  liveDemo?: string; // Made optional
   imageSrc: string;
-  isProduction?: boolean; // NEW: Field to indicate if project is in production
+  isProduction?: boolean;
+  isComingSoon?: boolean; // NEW: Field to indicate a coming soon project
 };
 
 const projects: Project[] = [
@@ -38,8 +39,8 @@ const projects: Project[] = [
       "Firebase",
     ],
     githubLink: "https://github.com/Kimulu/alx-project-nexus",
-    liveDemo: "https://alx-project-nexus-michael-kimulus-projects.vercel.app/", // Placeholder: Update with your live URL
-    imageSrc: "/images/job_board.png", // Placeholder: Update with your screenshot
+    liveDemo: "https://alx-project-nexus-michael-kimulus-projects.vercel.app/",
+    imageSrc: "/images/job_board.png",
     isProduction: false,
   },
   {
@@ -61,6 +62,15 @@ const projects: Project[] = [
     imageSrc: "/images/pomoflow.png",
     isProduction: true,
   },
+  {
+    // NEW: Placeholder for the Reactivate project
+    name: "Reactivate - React Learning Platform",
+    description:
+      "An interactive, gamified platform for developers to learn React by solving code challenges. Coming soon!",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Redux", "MongoDB"],
+    imageSrc: "https://placehold.co/500x300/1F2937/F3F4F6?text=Coming+Soon", // Placeholder image
+    isComingSoon: true,
+  },
 ];
 
 const ProjectsSection: React.FC = () => {
@@ -78,10 +88,15 @@ const ProjectsSection: React.FC = () => {
             key={index}
             className="bg-gray-800 p-5 rounded-lg shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-105 hover:ring-2 hover:ring-yellow-500 relative overflow-hidden"
           >
-            {/* NEW: Production Badge */}
+            {/* NEW: Production or Coming Soon Badge */}
             {project.isProduction && (
               <span className="absolute top-3 right-3 bg-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10 flex items-center gap-1">
                 Production <span className="text-sm">🚀</span>
+              </span>
+            )}
+            {project.isComingSoon && (
+              <span className="absolute top-3 right-3 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg z-10 flex items-center gap-1">
+                Coming Soon <span className="text-sm">✨</span>
               </span>
             )}
 
@@ -91,8 +106,8 @@ const ProjectsSection: React.FC = () => {
               alt={project.name}
               width={500}
               height={300}
-              className="w-full h-auto object-cover rounded-lg mb-4 aspect-video" // Use aspect-video for consistent image ratio
-              layout="responsive" // Ensure image is responsive
+              className="w-full h-auto object-cover rounded-lg mb-4 aspect-video"
+              layout="responsive"
             />
 
             <h3 className="text-xl font-semibold text-white mb-2">
@@ -115,7 +130,7 @@ const ProjectsSection: React.FC = () => {
             </div>
 
             <div className="flex gap-4 mt-2">
-              {project.githubLink && ( // Only show GitHub link if it exists
+              {project.githubLink && (
                 <a
                   href={project.githubLink}
                   target="_blank"
@@ -123,8 +138,7 @@ const ProjectsSection: React.FC = () => {
                   aria-label={`View ${project.name} on GitHub`}
                   className="text-gray-400 hover:text-white transition pt-2"
                 >
-                  <FaGithub size={24} />{" "}
-                  {/* Increased icon size for better visibility */}
+                  <FaGithub size={24} />
                 </a>
               )}
 
@@ -137,6 +151,10 @@ const ProjectsSection: React.FC = () => {
                 >
                   <ShinyButton label="View Project" />
                 </a>
+              )}
+
+              {project.isComingSoon && (
+                <ShinyButton label="Coming Soon" disabled={true} />
               )}
             </div>
           </div>
