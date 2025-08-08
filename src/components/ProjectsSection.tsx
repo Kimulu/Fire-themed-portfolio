@@ -68,7 +68,7 @@ const projects: Project[] = [
     description:
       "An interactive, gamified platform for developers to learn React by solving code challenges. Coming soon!",
     techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Redux", "MongoDB"],
-    imageSrc: "https://placehold.co/500x300/1F2937/F3F4F6?text=Coming+Soon", // Placeholder image
+    imageSrc: "/images/Reactivate.png", // Placeholder image
     isComingSoon: true,
   },
 ];
