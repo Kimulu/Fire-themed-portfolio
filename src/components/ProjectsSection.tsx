@@ -149,7 +149,7 @@ const ProjectsSection: React.FC = () => {
                   rel="noopener noreferrer"
                   aria-label={`View live demo of ${project.name}`}
                 >
-                  <ShinyButton label="View Project" />
+                  <ShinyButton label="View Project" disabled={false} />
                 </a>
               )}
 
