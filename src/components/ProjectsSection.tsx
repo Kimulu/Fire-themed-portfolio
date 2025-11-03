@@ -80,7 +80,7 @@ const projects: Project[] = [
       "Vercel",
     ],
     liveDemo: "https://reactivate-two.vercel.app/",
-    imageSrc: "/images/Reactivate1.png",
+    imageSrc: "/images/Reactivate1.PNG",
     isProduction: true, // ✅ now marked as production
   },
 ];
