@@ -63,13 +63,25 @@ const projects: Project[] = [
     isProduction: true,
   },
   {
-    // NEW: Placeholder for the Reactivate project
-    name: "Reactivate - React Learning Platform",
+    name: "Reactivate - Interactive React Learning Platform",
     description:
-      "An interactive, gamified platform for developers to learn React by solving code challenges. Coming soon!",
-    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Redux", "MongoDB"],
-    imageSrc: "/images/Reactivate.png", // Placeholder image
-    isComingSoon: true,
+      "An immersive, gamified platform for developers to learn and enjoy React by solving hands-on coding challenges in real time. Powered by Dockerized Jest testing, Sandpack editors, and a dynamic feedback engine that simulates real-world React development — designed to make learning React fun, practical, and addictive.",
+    techStack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Redux",
+      "Docker",
+      "MongoDB",
+      "Jest",
+      "Sandpack",
+      "Render",
+      "Vercel",
+    ],
+    liveDemo: "https://reactivate-two.vercel.app/",
+    imageSrc: "/images/Reactivate1.png",
+    isProduction: true, // ✅ now marked as production
   },
 ];
 
