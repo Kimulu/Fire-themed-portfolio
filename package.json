@@ -13,7 +13,7 @@
     "@tsparticles/slim": "^3.8.1",
     "framer-motion": "^12.12.1",
     "lottie-react": "^2.4.1",
-    "next": "15.3.2",
+    "next": "15.3.8",
     "nodemailer": "^7.0.3",
     "nprogress": "^0.2.0",
     "react": "^19.0.0",
