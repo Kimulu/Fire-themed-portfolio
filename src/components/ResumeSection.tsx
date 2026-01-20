@@ -7,21 +7,28 @@ const ResumeSection = () => {
       title: "Bachelors Degree in Business Information Technology",
       company: "Mount Kenya University",
       description:
-        "I did my bachelor's degree and graduated with a second class upper.",
+        "Completed a bachelor's degree in Business Information Technology and graduated with a second class upper.",
     },
     {
-      year: "2018-2019",
-      title: "Web Developer Internship Position",
-      company: "Hudutech Solutions",
+      year: "Aug 2018 - Jan 2019",
+      title: "Web Developer",
+      company: "Hudutech Ventures – Nairobi, Kenya",
       description:
-        "Built Websites that incorporated Low-code no-code technologies such as Wordpress.",
+        "Designed and developed client websites, ensuring optimal performance, usability, and responsive design standards.",
     },
     {
-      year: "2019-Current",
+      year: "Mar 2019 - Sep 2025",
       title: "Freelance Web Developer",
-      company: "Remote",
+      company: "Remote – Nairobi, Kenya",
       description:
-        "Currently Designing and building websites for Businesses that need an online presence.",
+        "Designed and developed websites for clients, while reviewing, debugging, and optimizing JavaScript, Python, and React code.",
+    },
+    {
+      year: "Oct 2025 - Jan 2026",
+      title: "Frontend Engineering Intern",
+      company: "Breezo Electric – Nairobi, Kenya",
+      description:
+        "Worked on frontend development tasks, building user-friendly interfaces and optimizing React code for performance.",
     },
   ];
 

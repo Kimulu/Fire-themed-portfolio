@@ -57,7 +57,7 @@ const projects: Project[] = [
       "Paystack",
       "M-Pesa",
     ],
-    githubLink: "",
+    githubLink: "https://github.com/Kimulu/pomoflow",
     liveDemo: "https://www.pomoflow.app",
     imageSrc: "/images/pomoflow.png",
     isProduction: true,
@@ -79,6 +79,7 @@ const projects: Project[] = [
       "Render",
       "Vercel",
     ],
+    githubLink: "https://github.com/Kimulu/reactivate_Clean",
     liveDemo: "https://reactivate-two.vercel.app/",
     imageSrc: "/images/Reactivate1.PNG",
     isProduction: true, // ✅ now marked as production

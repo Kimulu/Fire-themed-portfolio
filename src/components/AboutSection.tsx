@@ -33,8 +33,8 @@ const AboutSection = () => {
           <div className="mt-8">
             {/* Button to Download CV */}
             <a
-              href="/Michael_Kimulu_CV.pdf"
-              download="Michael_Kimulu_CV.pdf"
+              href="/Michael_Kimulu_CV_2026.pdf"
+              download="Michael_Kimulu_CV_2026.pdf"
               className="inline-block"
               onClick={handleDownload}
             >
